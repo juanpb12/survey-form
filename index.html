@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">This is a project written by Saidur an Juan.</p>
+        </div>
+        <form id="survey-form" action="">
+            <div>
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email address" required>
+            </div>
+            <div>
+                <label id="number-label" for="Age">Age</label>
+                <input id="number" type="number" min="18" max="90" placeholder="Choose your Age">
+            </div>
+            <div>
+                <label id="options" for="selection">Current role</label>
+                <select name="selection" id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="mid-time-job">Mid Time Job</option>
+                </select>
+            </div>
+            <div>  
+                <label id="recommend" for="recommend">Would you recommend us?</label> 
+                <label for="yes"><input type="radio" name="radio-user" value="yes">Yes</label>
+                <label for="no"><input type="radio" name="radio-user" value="no">No</label>
+                <label for="maybe"><input type="radio" name="radio-user" value="maybe">Maybe</label>
+            </div>
+            <div>
+                <label id="selection-checkboxes" for="question">What would you like to see improved?</label>
+                <label for="option1"><input type="checkbox" value="option1">Option1</label>
+                <label for="option2"><input type="checkbox" value="option2">Option2</label>
+                <label for="option3"><input type="checkbox" value="option3">Option3</label>
+                <label for="option4"><input type="checkbox" value="option4">Option4</label>
+            </div>
+            <div>
+                <label for="comments">Add a comment if you want:</label>
+                <textearea id="comments" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div>
+                <button id="submit" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
